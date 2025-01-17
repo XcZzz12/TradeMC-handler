@@ -1,5 +1,9 @@
 @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap';
 
+* {
+    box-sizing: border-box;
+}
+
 .products__container {
     display: flex;
     align-items: center;
@@ -21,7 +25,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: calc(25% - 8px);
+    min-width: 312px;
     background-color: #E9E9E9;
     border-radius: 12pt;
     border: 1px solid #E1E1E1;
@@ -30,8 +34,15 @@
     animation: fadeIn .5s forwards;
 }
 
+.day .product__card {
+    background-color: #343434;
+    border: 1px solid #2E2E2E;
+}
+
 .product__title {
+    font-family: 'Montserrat', sans-serif;
     font-size: 16pt;
+    font-weight: 100;
 }
 
 .product__card img {
@@ -50,6 +61,7 @@
 }
 
 .product__buy_button {
+    font-family: 'Montserrat', sans-serif;
     width: 60%;
     outline: none;
     background-color: #7FCB63;
@@ -136,6 +148,10 @@
     padding: 20px;
     border-radius: 10px;
     gap: 20px;
+}
+
+.day .modal__element {
+    background-color: rgb(25, 25, 25);
 }
 
 .modal__element img {
